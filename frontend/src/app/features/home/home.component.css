@@ -1,0 +1,13 @@
+.hero { background: linear-gradient(180deg, #fff 0%, var(--warm) 100%); padding-top: 3rem; }
+.hero-img { width: 100%; max-width: 640px; border-radius: 1.5rem; box-shadow: var(--shadow-lg); display: block; margin-inline: auto; }
+
+.step-icon { width: 4rem; height: 4rem; border-radius: 50%; background: #e9eefd; color: var(--accent);
+  display: flex; align-items: center; justify-content: center; font-size: 1.6rem; }
+
+.contact { background: var(--ink); color: #fff; }
+
+.toast-notice { position: fixed; left: 50%; bottom: 1.25rem; transform: translateX(-50%);
+  width: min(32rem, calc(100% - 2rem)); background: var(--ink); color: #fff; border-radius: 1rem;
+  padding: 0.9rem 1.1rem; display: flex; gap: 1rem; align-items: center; justify-content: space-between;
+  box-shadow: var(--shadow-lg); z-index: 1080; font-size: 0.92rem; }
+.toast-notice .btn-close { filter: invert(1); flex-shrink: 0; }
