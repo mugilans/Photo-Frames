@@ -6,10 +6,11 @@ import { Routes } from '@angular/router';
  */
 export const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     title: 'Photo Printing & Custom Photo Frames | Frameory',
     loadComponent: () =>
       import('./features/home/home.component').then((m) => m.HomeComponent),
   },
-  { path: '**', redirectTo: '',pathMatch: 'full'},
+  { path: '**', redirectTo: 'home',pathMatch: 'full'},
+  { path: '', redirectTo: 'home',pathMatch: 'full'},
 ];
